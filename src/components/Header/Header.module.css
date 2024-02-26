@@ -1,0 +1,68 @@
+/* font-family: "Ubuntu", sans-serif;
+font-family: "Roboto", sans-serif; */
+.main_header{
+    background-color:  #FAFAFA;
+    height: 680px;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    max-width: 573px;
+    width: 100%;
+}
+.buttons{
+    display: flex;
+    gap: 30px;
+}
+
+.hero img{
+    width: 585px;
+    height: 680px;
+}
+.pretitle h1{
+    font-size: 55px;
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+}
+.title p{
+    font-family: "Roboto", sans-serif; 
+    font-size: 18px;
+    color:#737373;
+}
+.buttons a{
+    width: 162px;
+    height: 52px;
+    text-decoration: none;
+    border: 1px solid #96BB7C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    transition: all 0.8s ease; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+.sec_button{
+    background-color: #96BB7C;
+    color: #FAFAFA;
+}
+.sec_button:hover{
+    background-color: #FAFAFA;
+    color: #96BB7C;
+}
+.first_button{
+    color: #96BB7C;
+}
+.first_button:hover{
+    background-color: #96BB7C;
+    color: #FAFAFA;
+}

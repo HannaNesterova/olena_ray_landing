@@ -5,7 +5,7 @@ font-family: "Roboto", sans-serif; */
 .tertiary {
     padding:30px 20px;
     margin: 0px 70px;
-    background-color: rgb(255, 255, 255);
+    background-color:white;
 }
 .span_left{
     content: " ";
@@ -61,6 +61,9 @@ font-family: "Roboto", sans-serif; */
     font-weight: 600;
     font-size: 24px;
     text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.logo:hover{
+    color: #96BB7C;
 }
 
 
