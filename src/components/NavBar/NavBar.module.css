@@ -1,0 +1,23 @@
+.tertiary {
+    background-color: blueviolet;
+    padding: 10px;
+}
+.href{
+    color: white;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+/* Nav .href:hover,
+Nav .href:focus,
+Nav .href:active{
+    color: brown;
+} */
+
+Nav Nav.Link,
+Nav .href:focus,
+Nav .href:active{
+    color: brown;
+}
+.offcanvas{
+    background-color: rgba(0, 0, 0, 0.304);
+}
