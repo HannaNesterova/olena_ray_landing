@@ -1,21 +1,21 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import styles from './NavBar.module.css'
+
 
 function NavBar(){
     return(
 <>
       {['md'].map((expand) => (
         <Navbar key={expand} expand={expand} sticky="top" className={styles.tertiary} >
-          <Container fluid>
-            <Navbar.Brand href="#" className={styles.href}>o.lena_ray</Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+        <span className={styles.span_left}></span>
+          <Container fluid className={styles.container}>
+
+            <Navbar.Brand href="#" className={styles.logo}>Olena Kenyiz</Navbar.Brand>
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className={styles.button + ' ' + styles.hideTogglerBorder}/>
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
@@ -37,6 +37,7 @@ function NavBar(){
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
+          <span className={styles.span_right}></span>
         </Navbar>
       ))}
     </>

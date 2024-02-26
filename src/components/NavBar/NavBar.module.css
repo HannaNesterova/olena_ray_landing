@@ -1,23 +1,115 @@
+/* font-family: "Ubuntu", sans-serif;
+font-family: "Roboto", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
+
 .tertiary {
-    background-color: blueviolet;
-    padding: 10px;
+    padding:30px 20px;
+    margin: 0px 70px;
+    background-color: rgb(255, 255, 255);
+}
+.span_left{
+    content: " ";
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    max-width: 95px;
+    width: 100%; 
+    height: 130px; 
+    background-color: #FFAB71; 
+    border-bottom-right-radius: 50px;
+}
+.span_right{
+    content: " ";
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    max-width: 120px;
+    width: 100%; 
+    height: 130px; 
+    background-color: #FFAB71; 
+    border-bottom-left-radius: 50px;
 }
 .href{
-    color: white;
+    color: #737373;
     transition: all 0.5s ease;
     cursor: pointer;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    position: relative;
 }
-/* Nav .href:hover,
-Nav .href:focus,
-Nav .href:active{
-    color: brown;
-} */
+.href::after {
+    content: ''; 
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background-color: transparent; 
+    transition: all 0.3s ease; 
+}
 
-Nav Nav.Link,
-Nav .href:focus,
-Nav .href:active{
-    color: brown;
+.href:hover::after,
+.href:active::after {
+    background-color: #FFAB71; 
 }
-.offcanvas{
-    background-color: rgba(0, 0, 0, 0.304);
+
+.logo{
+    color: #252b42d5;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+}
+.button{
+    border: none;
+    border-bottom: 3px solid #96BB7C;
+    border-top: 3px solid #96BB7C;
+    border-radius: 10px;
+}
+.button:hover,
+.button:active,
+.button:focus{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover:not(:focus) {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2) !important;
+    outline: none !important;
+}
+@media all and (max-width:690px){
+    .tertiary {
+        margin-right: 98px;
+    }
+}
+@media all and (max-width:450px){
+    .tertiary {
+        padding: 20px 0px;
+        margin: 0px;
+    }
+    .tertiary .container{
+        z-index: 100;
+        background-color: white;
+        padding: 5px 30px;
+    }
+    .span_left{
+    max-width: 55px;
+    width: 100%; 
+    border-bottom-right-radius: 30px;
+    }
+    .span_right{
+        max-width: 80px;
+        width: 100%; 
+        }
+    .button{
+        z-index: 100;
+    }
+ 
 }
