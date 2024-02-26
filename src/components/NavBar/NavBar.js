@@ -5,8 +5,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import styles from './NavBar.module.css'
 
-
 function NavBar(){
+
     return(
 <>
       {['md'].map((expand) => (
