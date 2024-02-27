@@ -1,5 +1,7 @@
 /* font-family: "Ubuntu", sans-serif;
 font-family: "Roboto", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
+
 .main_header{
     background-color:  #FAFAFA;
     height: 680px;

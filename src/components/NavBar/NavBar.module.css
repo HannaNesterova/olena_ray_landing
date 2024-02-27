@@ -76,11 +76,14 @@ font-family: "Roboto", sans-serif; */
     border-bottom: 3px solid #96BB7C;
     border-top: 3px solid #96BB7C;
     border-radius: 10px;
+    background-color: #FFD4C9;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .button:hover,
 .button:active,
 .button:focus{
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #FFAB71;
 }
 
 .button:hover:not(:focus) {
@@ -88,8 +91,14 @@ font-family: "Roboto", sans-serif; */
     outline: none !important;
 }
 @media all and (max-width:690px){
+    .span_right,
+    .span_left{
+        display: none;
+    }
     .tertiary {
-        margin-right: 98px;
+    width: 100%;
+    background-color: #FFAB71;
+    margin: 0;
     }
 }
 @media all and (max-width:450px){
