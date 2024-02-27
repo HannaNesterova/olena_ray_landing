@@ -1,4 +1,6 @@
+import AboutAuthor from "../AboutAuthor/AboutAuthor";
 import AboutCourse from "../AboutCourse/AboutCourse";
+import Benefits from "../Benefits/Benefits";
 import ShowFeedback from "../Feedbacks/ShowFeedback";
 import Header from "../Header/Header";
 import NavBar from "../NavBar/NavBar";
@@ -9,6 +11,9 @@ function MainContainer(){
         <div>
             <NavBar />
             <Header />
+            <Benefits />
+            <AboutAuthor />
+            
             <AboutCourse />
             <ShowFeedback />
         </div>

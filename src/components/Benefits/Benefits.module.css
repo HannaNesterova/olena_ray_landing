@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
+
+.benefits_main{
+    padding: 70px 0px;
+    background-color: bisque;
+}
+
+.benefits_main h2{
+    text-align: center;
+    font-size: 40px;
+    color: #252B42;
+    font-family: "Ubuntu", sans-serif;
+    padding: 50px 0px 60px;
+    position: relative;
+}
+.benefits_main h2::after{
+    content: '';
+    position: absolute;
+    width: 95px;
+    height:7px;
+    background-color: #252B42;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%)
+}
+.benefits_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+}
+.benefit_item{
+    font-family: "Roboto", sans-serif;
+    width: 320px;
+    height: 220px;
+    padding: 10px;
+    text-align: center;
+    background-color: #FFAB71;
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 9px 10px rgba(0.4, 0.1, 0.1, 0.2);
+    color: #252B42;
+    font-weight: 400;
+    border-radius: 20px;
+}
+.arrow{
+    width: 50px;
+    height: auto;
+    animation: shake 2s ease-in-out infinite;
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}

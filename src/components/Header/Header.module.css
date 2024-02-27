@@ -28,9 +28,10 @@ font-family: "Roboto", sans-serif; */
     height: 680px;
 }
 .pretitle h1{
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 700;
     font-family: "Ubuntu", sans-serif;
+    color: #252B42;
 }
 .title p{
     font-family: "Roboto", sans-serif; 
