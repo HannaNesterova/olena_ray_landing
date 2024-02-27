@@ -28,7 +28,7 @@ font-family: "Roboto", sans-serif; */
     height: 680px;
 }
 .pretitle h1{
-    font-size: 55px;
+    font-size: 45px;
     font-weight: 700;
     font-family: "Ubuntu", sans-serif;
 }
@@ -36,6 +36,7 @@ font-family: "Roboto", sans-serif; */
     font-family: "Roboto", sans-serif; 
     font-size: 18px;
     color:#737373;
+    margin-top: 13px;
 }
 .buttons a{
     width: 162px;
@@ -67,4 +68,15 @@ font-family: "Roboto", sans-serif; */
 .first_button:hover{
     background-color: #96BB7C;
     color: #FAFAFA;
+}
+.small_image {
+    width: 100px;
+    height: auto; 
+    margin-left: 10px; 
+    animation: pulse 1.5s ease-in-out infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }

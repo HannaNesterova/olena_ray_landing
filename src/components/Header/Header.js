@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import styles from './Header.module.css';
 import coach from '../../img/hero/None.jpeg';
+import smallImage from '../../img/imgs/phone1.png';
 
 function Header(){
     useEffect(() => {
@@ -18,16 +19,16 @@ function Header(){
                      data-aos-easing="linear"
                      data-aos-duration="1500"
                       className={styles.pretitle}>
-                        <h1>HIGH QUALITY <br /> COURSES </h1>
+                        <h1> "Фото Інтенсив"<br />по створенню мобільних фотографій </h1>
                     </div>
 
                     <div className={styles.title}
                     data-aos="fade-down"
                     data-aos-easing="linear"
                     data-aos-duration="1500">
-                        <p>Every day brings with
-                         it a fresh set of learning
-                         possibilities.</p>
+                        <p>Навчись фотографувати як в Pinterest,<br /> маючи лише телефон.
+                        <img src={smallImage} alt="Small Image" className={styles.small_image} />
+                        </p>
                     </div>
                     <div className={styles.buttons}
                         data-aos="fade-up"
