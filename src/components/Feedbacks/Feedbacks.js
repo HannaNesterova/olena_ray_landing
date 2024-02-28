@@ -1,4 +1,3 @@
-import { dataFeedbacks } from "../../data/dataFeedbacks";
 import styles from './Feedbacks.module.css'
 
 function Feedbacks({item}){

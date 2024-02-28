@@ -1,0 +1,61 @@
+/* font-family: "Ubuntu", sans-serif;
+font-family: "Roboto", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
+
+.program_container{
+    background-color: bisque;
+    padding: 50px 0px;
+}
+.container h2{
+    text-align: center;
+    font-size: 40px;
+    color: #252B42;
+    font-family: "Ubuntu", sans-serif;
+    padding: 50px 0px 60px;
+    position: relative;
+}
+.container h2::after{
+    content: '';
+    position: absolute;
+    width: 95px;
+    height: 7px;
+    background-color: #252B42;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%)
+}
+
+.accordion{
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+}
+.accordion .item{
+    font-family: "Ubuntu", sans-serif;
+    border: 0;
+    border-radius: 7px;
+    padding: 5px;
+    margin-bottom: 7px;
+    font-size: 18px;
+    box-shadow: 2px 2px 4px #96BB7C;
+}
+.accordion .item  button{
+    font-size: 19px;
+    color: #252B42;
+    font-weight: 700;
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom:  1px solid #96BB7C;
+    transition: all 1s ease;
+
+}
+
+.accordion .item button:active::after, 
+.accordion .item button:focus::after{
+    background-color: #96BB7C;
+    border-radius: 50%; 
+    transition: all 1s ease;
+}
+.accordion .item .accordion-collapse{
+    transition: all .4s ease;
+}

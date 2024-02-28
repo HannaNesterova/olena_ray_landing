@@ -4,6 +4,7 @@ import Benefits from "../Benefits/Benefits";
 import ShowFeedback from "../Feedbacks/ShowFeedback";
 import Header from "../Header/Header";
 import NavBar from "../NavBar/NavBar";
+import Program from "../Program/Program";
 
 
 function MainContainer(){
@@ -13,8 +14,9 @@ function MainContainer(){
             <Header />
             <Benefits />
             <AboutAuthor />
-            
             <AboutCourse />
+            <Program />
+            
             <ShowFeedback />
         </div>
     )
