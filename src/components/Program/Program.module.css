@@ -3,7 +3,7 @@ font-family: "Roboto", sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
 
 .program_container{
-    background-color: bisque;
+    background-color: #a9a9a933;
     padding: 50px 0px;
 }
 .container h2{
