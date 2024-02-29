@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import styles from './Header.module.css';
-import coach from '../../img/hero/None.jpeg';
-import smallImage from '../../img/imgs/phone1.png';
+import coach from '../../img/imgs/Hero_2.png';
+import mobile_hero from '../../img/imgs/hero_mob.png';
 
 function Header(){
     useEffect(() => {
@@ -19,7 +19,7 @@ function Header(){
                      data-aos-easing="linear"
                      data-aos-duration="1500"
                       className={styles.pretitle}>
-                        <h1> "Фото Інтенсив"<br />по створенню мобільних фотографій </h1>
+                        <h1> Фото Інтенсив<br />по створенню < br/> мобільних фотографій </h1>
                     </div>
 
                     <div className={styles.title}
@@ -27,7 +27,6 @@ function Header(){
                     data-aos-easing="linear"
                     data-aos-duration="1500">
                         <p>Навчись фотографувати як в Pinterest,<br /> маючи лише телефон.
-                        <img src={smallImage} alt="Small Image" className={styles.small_image} />
                         </p>
                     </div>
                     <div className={styles.buttons}
@@ -39,7 +38,8 @@ function Header(){
                     </div>
                 </div>
                 <div className={styles.hero}>
-                    <img src={coach} alt='coach' />
+                    <img src={coach} alt='coach' className={styles.hero_web}/>
+                    <img src={mobile_hero} className={styles.mobile_hero} alt='coach' />
                 </div>
 
             </div>

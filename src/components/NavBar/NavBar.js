@@ -3,7 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import styles from './NavBar.module.css'
+import styles from './NavBar.module.css';
+import logo from '../../img/imgs/logo.png';
 
 function NavBar(){
 
@@ -11,10 +12,9 @@ function NavBar(){
 <>
       {['md'].map((expand) => (
         <Navbar key={expand} expand={expand} sticky="top" className={styles.tertiary} >
-        <span className={styles.span_left}></span>
           <Container fluid className={styles.container}>
 
-            <Navbar.Brand href="#" className={styles.logo}>Olena Kenyiz</Navbar.Brand>
+            <Navbar.Brand href="#"><img src={logo} className={styles.logo} alt='logo'/></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className={styles.button + ' ' + styles.hideTogglerBorder}/>
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -37,7 +37,6 @@ function NavBar(){
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
-          <span className={styles.span_right}></span>
         </Navbar>
       ))}
     </>

@@ -1,10 +1,11 @@
-/* font-family: "Ubuntu", sans-serif;
-font-family: "Roboto", sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
+/* font-family: "Roboto", sans-serif; 
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@300;400&display=swap');
 
 .main_header{
-    background-color:  #FAFAFA;
-    height: 680px;
+    background-image: url('../../img/imgs//background.png');
 }
 .container{
     display: flex;
@@ -24,69 +25,68 @@ font-family: "Roboto", sans-serif; */
     gap: 30px;
 }
 
-.hero img{
-    width: 585px;
-    height: 680px;
-}
 .pretitle h1{
-    font-size: 40px;
+    font-size: 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 700;
-    font-family: "Ubuntu", sans-serif;
-    color: #252B42;
 }
 .title p{
     font-family: "Roboto", sans-serif; 
-    font-size: 18px;
-    color:#737373;
+    font-size: 12px;
+    color:#ffffff;
     margin-top: 13px;
+    line-height: 28px;
 }
 .buttons a{
-    width: 162px;
-    height: 52px;
+    width: 220px;
+    height: 59px;
     text-decoration: none;
-    border: 1px solid #96BB7C;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 7px;
+    border-radius: 22px;
     transition: all 0.8s ease; 
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     font-size: 16px;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 .sec_button{
-    background-color: #96BB7C;
-    color: #FAFAFA;
+    background-color: #CC30AA;
+    color: #ffffff;
+    transition: all 0.3s ease;
 }
 .sec_button:hover{
-    background-color: #FAFAFA;
-    color: #96BB7C;
+    background: linear-gradient(to right, #5D074A, #CC30AA);
 }
 .first_button{
-    color: #96BB7C;
+    color: white;
+    border: 1px solid #ffffff;
 }
 .first_button:hover{
-    background-color: #96BB7C;
-    color: #FAFAFA;
+background-color: white;
+color: #FFB501;
 }
-.small_image {
-    width: 100px;
-    height: auto; 
-    margin-left: 10px; 
-    animation: pulse 1.5s ease-in-out infinite;
+.mobile_hero{
+    display: none;
 }
+
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.1); }
     100% { transform: scale(1); }
 }
 
-@media all and (max-width:970px){
+@media all and (max-width:1090px){
     .hero img{
-       width: 450px;
-       height: 530px;
+       width: 407px;
+       height: 448px;
     }
     .pretitle h1{
         font-size: 35px;
@@ -94,19 +94,75 @@ font-family: "Roboto", sans-serif; */
     .main_header{
         display: flex;
         justify-content: flex-end;
-        height: 550px;
+        align-items: flex-end;
+        height: 480px;
     }
     .container{
-        justify-content: flex-end;
+        align-items: center;
     }
 }
 
 @media all and (max-width:820px){
+    .main_header{
+        height: 396px;
+    }
     .hero img{
-       width: 350px;
-       height: 420px;
+       width: 342px;
+       height: 357px;
+    }
+    .pretitle h1{
+        font-size: 30px;
     }
     .container{
         gap: 20px;
     }
+    .buttons a{
+        width: 180px;
+        height: 40px;
+        padding: 10px;
+    }
+}
+@media all and (max-width:770px){
+    .container{
+        gap: 0px;
+    }
+    .main_header{
+        height: 100%;
+        justify-content: center;
+    }
+}
+@media all and (max-width:690px){
+    .container{
+        flex-direction: column;
+    }
+    .main_header{
+        justify-content: center;
+        padding-top: 30px;
+    }
+    .text{
+        text-align: center;
+    }
+}
+@media all and (max-width:450px){
+    .main_header{
+        background: linear-gradient(to right, #FFC700, #FD7900);
+    }
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.buttons a{
+    width: 330px;
+    padding: 24px 50px;
+}
+.hero_web{
+    display: none;
+}
+.hero .mobile_hero{
+    display: block;
+    width: 390px;
+    height: 520px;
+}
 }

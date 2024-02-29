@@ -3,34 +3,10 @@ font-family: "Roboto", sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
 
 .tertiary {
-    padding:30px 20px;
-    margin: 0px 70px;
     background-color:white;
 }
-.span_left{
-    content: " ";
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    max-width: 95px;
-    width: 100%; 
-    height: 130px; 
-    background-color: #FFAB71; 
-    border-bottom-right-radius: 50px;
-}
-.span_right{
-    content: " ";
-    position: fixed; 
-    top: 0; 
-    right: 0; 
-    max-width: 120px;
-    width: 100%; 
-    height: 130px; 
-    background-color: #FFAB71; 
-    border-bottom-left-radius: 50px;
-}
 .href{
-    color: #737373;
+    color: #606060;
     transition: all 0.5s ease;
     cursor: pointer;
     font-family: "Ubuntu", sans-serif;
@@ -73,32 +49,24 @@ font-family: "Roboto", sans-serif; */
 }
 .button{
     border: none;
-    border-bottom: 3px solid #96BB7C;
-    border-top: 3px solid #96BB7C;
     border-radius: 10px;
-    background-color: #FFD4C9;
+    background-color: #8FBC0E;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .button:hover,
 .button:active,
 .button:focus{
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    background-color: #FFAB71;
+    background-color: #ffffff;
 }
 
 .button:hover:not(:focus) {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2) !important;
     outline: none !important;
 }
-@media all and (max-width:690px){
-    .span_right,
-    .span_left{
-        display: none;
-    }
-    .tertiary {
-    width: 100%;
-    background-color: #FFAB71;
-    margin: 0;
+@media all and (max-width:770px){
+    .logo{
+        width: 160px;
     }
 }
 @media all and (max-width:450px){
@@ -111,15 +79,6 @@ font-family: "Roboto", sans-serif; */
         background-color: white;
         padding: 5px 30px;
     }
-    .span_left{
-    max-width: 55px;
-    width: 100%; 
-    border-bottom-right-radius: 30px;
-    }
-    .span_right{
-        max-width: 80px;
-        width: 100%; 
-        }
     .button{
         z-index: 100;
     }
