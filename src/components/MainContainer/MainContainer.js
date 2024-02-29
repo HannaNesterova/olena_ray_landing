@@ -12,8 +12,9 @@ function MainContainer(){
         <div>
             <NavBar />
             <Header />
-            <Benefits />
             <AboutAuthor />
+            <Benefits />
+
             <AboutCourse />
             <Program />
             

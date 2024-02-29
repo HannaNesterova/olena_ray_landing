@@ -8,17 +8,20 @@
     background-image: url('../../img/imgs//background.png');
 }
 .container{
+    padding-top: 13px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 0px 45px;
 }
+.navbar-expand-md .navbar-nav 
 
 .text{
     display: flex;
     flex-direction: column;
     max-width: 573px;
     width: 100%;
+    padding: 24px;
 }
 .buttons{
     display: flex;
@@ -35,9 +38,8 @@
 }
 .title p{
     font-family: "Roboto", sans-serif; 
-    font-size: 12px;
+    font-size: 22px;
     color:#ffffff;
-    margin-top: 13px;
     line-height: 28px;
 }
 .buttons a{
@@ -47,9 +49,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 22px;
+    border-radius: 44px;
     transition: all 0.8s ease; 
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     font-size: 16px;
     font-weight: 400;
@@ -64,6 +65,7 @@
 }
 .sec_button:hover{
     background: linear-gradient(to right, #5D074A, #CC30AA);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .first_button{
     color: white;
@@ -72,6 +74,7 @@
 .first_button:hover{
 background-color: white;
 color: #FFB501;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .mobile_hero{
     display: none;
@@ -86,7 +89,7 @@ color: #FFB501;
 @media all and (max-width:1090px){
     .hero img{
        width: 407px;
-       height: 448px;
+       height: 427px;
     }
     .pretitle h1{
         font-size: 35px;
