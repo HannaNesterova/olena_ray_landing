@@ -1,0 +1,28 @@
+.footer_container{
+    background-color: #501D44;
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.icon_contact{
+    background-color: #501D44;
+}
+.footer_box a{
+    color: white;
+    font-size: 30px;
+    margin-left: 30px;
+    transition: all 1s ease;
+}
+.footer_box a:hover{
+    color: #FFC700;
+    text-shadow: 1px 1px 1px white;
+}
+.developing a{
+    color: white;
+    transition: all 1s ease;
+}
+.developing a:hover{
+    color: #FFC700;
+}
