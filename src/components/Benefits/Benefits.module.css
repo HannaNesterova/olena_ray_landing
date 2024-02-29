@@ -2,28 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
 
 .benefits_main{
-    padding: 70px 0px;
-    background-color: bisque;
+    padding:50px 10px 140px;
+    background: linear-gradient(to right, #F15886, #A625D4);
+    position: relative;
+    height: 100%;
 }
 
 .benefits_main h2{
     text-align: center;
-    font-size: 40px;
-    color: #252B42;
+    font-size: 42px;
+    color: white;
     font-family: "Ubuntu", sans-serif;
     padding: 50px 0px 60px;
-    position: relative;
+    font-weight: 400;
+    
 }
-.benefits_main h2::after{
-    content: '';
-    position: absolute;
-    width: 95px;
-    height:7px;
-    background-color: #252B42;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%)
-}
+
 .benefits_container{
     display: flex;
     flex-wrap: wrap;
@@ -32,23 +26,35 @@
     gap: 55px;
 }
 .benefit_item{
-    font-family: "Roboto", sans-serif;
-    width: 320px;
-    height: 220px;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    background-color: #FFAB71;
-    color: rgb(255, 255, 255);
-    box-shadow: 0px 9px 10px rgba(0.4, 0.1, 0.1, 0.2);
-    color: #252B42;
-    font-weight: 400;
+    gap: 30px;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    width: 180px;
+    height: 285px;
+    color: white;
     border-radius: 20px;
+    font-size: 16px;
+    border: 1px solid white;
 }
-.arrow{
-    width: 50px;
-    height: auto;
-    animation: shake 2s ease-in-out infinite;
+.icon{
+    width: 51px;
+    height: 51px;
 }
+.icon_top{
+    position: absolute;
+    top: -10%;
+    left: 10%;
+}
+.icon_bottom{
+    position: absolute;
+    bottom:-10%;
+    right:10%;
+}
+
 @keyframes shake {
     0% { transform: translateX(0); }
     25% { transform: translateX(-5px); }
@@ -59,6 +65,30 @@
 
 @media all and (max-width:820px){
     .benefits_main h2{
-        font-size: 30px;
+        font-size: 35px;
+    }
+    .benefits_container{
+        gap: 30px;
+    }
+    .icon_top{
+        width: 140px;
+        top: -5%;
+    }
+    .icon_bottom{
+        width: 140px;
+        bottom: -5%;
+    }
+}
+@media all and (max-width:450px){
+    .benefits_container{
+        flex-direction: column;
+    }
+    .icon_top{
+        width: 160px;
+        top: -3%;
+    }
+    .icon_bottom{
+        width: 160px;
+        bottom: -3%;
     }
 }

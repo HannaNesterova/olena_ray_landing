@@ -35,6 +35,7 @@
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
+    text-shadow:2px 3px 1px #E84C1F;
 }
 .title p{
     font-family: "Roboto", sans-serif; 

@@ -1,11 +1,9 @@
-/* font-family: "Ubuntu", sans-serif;
-font-family: "Roboto", sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
 
 
 .container{
     background-color: #FAFAFA;
-    padding: 30px 0px 80px;
+    padding: 30px 0px 100px;
 }
 .container h2{
     text-align: center;
@@ -22,15 +20,18 @@ font-family: "Roboto", sans-serif; */
     align-items: center;
 }
 .about_text_title{
-    width: 600px;
+    width: 550px;
 }
 .about_text_title p{
     font-size: 22px;
     font-family: "Roboto", sans-serif; 
+    color: #354052;
+
 }
 
-.boom{
-    animation: fadeIn 2s ease-in-out infinite;
+.about_text_title p span{
+    font-size: 28px;
+    font-weight: 700;
 }
 
 @keyframes fadeIn {
@@ -46,10 +47,26 @@ font-family: "Roboto", sans-serif; */
 
 @media all and (max-width:820px){
     .container h2{
-        font-size: 30px;
+        font-size: 35px;
         padding: 50px 0px 30px;
     }
     .about_main{
         margin: 0px 30px;
+    }
+    .about_text_title{
+        width: 300px;
+    }
+    .hero{
+        width: 280px;
+    }
+}
+@media all and (max-width:650px){
+    .about_main{
+        flex-direction: column-reverse;
+    }
+    .about_text_title{
+        max-width: 500px;
+        width: 100%;
+        text-align: justify;
     }
 }

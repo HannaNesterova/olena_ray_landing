@@ -14,11 +14,12 @@ function MainContainer(){
             <Header />
             <AboutAuthor />
             <Benefits />
+            <ShowFeedback />
 
             <AboutCourse />
             <Program />
             
-            <ShowFeedback />
+
         </div>
     )
 

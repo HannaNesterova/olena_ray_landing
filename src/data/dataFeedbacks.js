@@ -1,33 +1,34 @@
+import feedback1 from '../img/feedbacks/01.jpg';
+import feedback2 from '../img/feedbacks/02.jpg';
+import feedback3 from '../img/feedbacks/03.jpg';
+import feedback4 from '../img/feedbacks/04.jpg';
+import feedback5 from '../img/feedbacks/05.jpg';
+import feedback6 from '../img/feedbacks/06.jpg';
+ 
  export const dataFeedbacks = [ 
     {
         id: 1,
-        name:'Alla',
-        text: 'Awesome'
+        feedback:feedback1,
     },
     {
         id: 2,
-        name:'Alla',
-        text: 'Awesome'
+        feedback:feedback2,
     },
     {
         id: 3,
-        name:'Alla',
-        text: 'Awesome'
+        feedback:feedback3,
     },
     {
         id: 4,
-        name:'Alla',
-        text: 'Awesome'
+        feedback:feedback4,
     },    
     {
         id: 5,
-        name:'Alla',
-        text: 'Awesome'
+        feedback:feedback5,
     },
     {
         id: 6,
-        name:'Alla',
-        text: 'Awesome'
+        feedback:feedback6,
     }
 ]
 
