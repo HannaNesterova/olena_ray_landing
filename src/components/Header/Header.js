@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-scroll';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import styles from './Header.module.css';
@@ -33,8 +34,16 @@ function Header(){
                         data-aos="fade-up"
                         data-aos-easing="linear"
                         data-aos-duration="1500">
-                        <a href='#'className={styles.first_button} >Дізнатися більше</a>
-                        <a href='#' className={styles.sec_button}>Доєднатися</a>
+                    <Link to="program" 
+                        smooth={true} 
+                        duration={500} 
+                        className={styles.first_button}>Дізнатися більше
+                    </Link>
+                    <Link to="buy" 
+                        smooth={true} 
+                        duration={500} 
+                        className={styles.first_button}>Доєднатися
+                    </Link>
                     </div>
                 </div>
                 <div className={styles.hero}>

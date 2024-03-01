@@ -5,7 +5,7 @@ import icon8 from '../../img/icons/08.png';
  
 function Benefits(){
     return(
-        <div className={styles.benefits_main}>
+        <div className={styles.benefits_main} id="benefits" >
             <img src={icon7} alt='icon' className={styles.icon_top}/>
             <h2>У чому переваги Інтенсиву?</h2>
             <div className={styles.benefits_container}>

@@ -4,7 +4,7 @@ import PayBlock from '../PayBlock/PayBlock';
 
 function Program (){
     return(
-        <div className={styles.program_container}>
+        <div className={styles.program_container} id="program" >
             <div className={styles.container}>
                 <h2>Програма Інтенсиву</h2>
             </div>

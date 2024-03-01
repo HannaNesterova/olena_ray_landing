@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { Link } from 'react-scroll';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -7,16 +9,36 @@ import styles from './NavBar.module.css';
 import logo from '../../img/imgs/logo.png';
 
 function NavBar(){
+  const [expanded, setExpanded] = useState(false);
+
+  const handleToggle = () => {
+    setExpanded(!expanded); 
+  };
+
+  const handleClose = () => {
+    setExpanded(false); 
+  };
+
+  const handleLinkClick = () => {
+    setExpanded(false); 
+  };
+
 
     return(
 <>
       {['md'].map((expand) => (
-        <Navbar key={expand} expand={expand} sticky="top" className={styles.tertiary} >
-          <Container fluid className={styles.container}>
+        <Navbar key={expand} 
+        expand={expand} 
+        expanded={expanded}sticky="top"
+        className={styles.tertiary} >
+          <Container fluid className={styles.container}
+            onClick={handleToggle} >
 
             <Navbar.Brand href="#"><img src={logo} className={styles.logo} alt='logo'/></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className={styles.button + ' ' + styles.hideTogglerBorder}/>
             <Navbar.Offcanvas
+              show={expanded} 
+              onHide={handleClose} 
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
@@ -28,11 +50,32 @@ function NavBar(){
               </Offcanvas.Header>
               <Offcanvas.Body >
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1" className={styles.href}>Про курс</Nav.Link>
-                  <Nav.Link href="#action2" className={styles.href}>Хто я</Nav.Link>
-                  <Nav.Link href="#action3" className={styles.href}>Відгуки</Nav.Link>
-                  <Nav.Link href="#action4" className={styles.href}>FAQ</Nav.Link>
-                  <Nav.Link href="#action5" className={styles.href}>Купити</Nav.Link>
+                <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Link to="about" 
+                    smooth={true} 
+                    duration={500} 
+                    onClick={handleLinkClick} 
+                    className={styles.href}>Про мене
+                </Link>
+                <Link to="benefits" 
+                    smooth={true} 
+                    duration={500} 
+                    onClick={handleLinkClick} 
+                    className={styles.href}>Переваги
+                </Link>
+                <Link to="program" 
+                    smooth={true} 
+                    duration={500} 
+                    onClick={handleLinkClick} 
+                    className={styles.href}>Програма
+                </Link>
+                <Link to="feedbacks" 
+                    smooth={true} 
+                    duration={500} 
+                    onClick={handleLinkClick} 
+                    className={styles.href}>Відгуки
+                </Link>
+              </Nav>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

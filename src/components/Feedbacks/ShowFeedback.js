@@ -44,7 +44,7 @@ function ShowFeedback(){
         ]
       };
     return(
-        <div className={styles.main_container_feedbacks}>
+        <div className={styles.main_container_feedbacks} id="feedbacks" >
         <div className={styles.container}>
             <h2>Відгуки кристувачів</h2>
 

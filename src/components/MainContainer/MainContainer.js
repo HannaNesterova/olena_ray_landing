@@ -1,13 +1,12 @@
-import { PhotoAlbum } from "react-photo-album";
+import NavBar from '../NavBar/NavBar';
+import Header from '../Header/Header';
 import AboutAuthor from "../AboutAuthor/AboutAuthor";
-import Benefits from "../Benefits/Benefits";
-import ShowFeedback from "../Feedbacks/ShowFeedback";
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
-import NavBar from "../NavBar/NavBar";
-import Program from "../Program/Program";
-import FixedIcon from "../FixedIcon/FixedIcon";
-import Examples from "../Examples/Examples";
+import Benefits from '../Benefits/Benefits';
+import ShowFeedback from '../Feedbacks/ShowFeedback';
+import Program from '../Program/Program';
+import Examples from '../Examples/Examples';
+import Footer from '../Footer/Footer';
+import FixedIcon from '../FixedIcon/FixedIcon';
 
 
 
@@ -21,7 +20,6 @@ function MainContainer(){
             <Benefits />
             <ShowFeedback />
             <Program />
-            <PhotoAlbum />
             <Examples />
             <Footer />
         </div>

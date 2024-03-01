@@ -3,7 +3,7 @@ import hero from '../../img/imgs/hero_3.png'
 
 function AboutAuthor () {
     return(
-        <div className={styles.container}>
+        <div className={styles.container} id="about" >
                 <h2>Про Автора</h2>
             <div className={styles.about_main}>
                 <div className={styles.about_img}>
