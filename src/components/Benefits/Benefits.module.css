@@ -91,4 +91,10 @@
         width: 160px;
         bottom: -3%;
     }
+    .benefits_main h2{
+        font-size: 30px;
+        width: 250px;
+        margin:0 auto;
+        padding: 18px 0px 48px 0px;
+    }
 }

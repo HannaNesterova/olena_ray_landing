@@ -3,7 +3,7 @@ import icon from '../../img/icons/pay.svg'
 
 function PayBlock(){
     return(
-        <div className={styles.container} id="buy" > 
+        <div className={styles.container}> 
             <div className={styles.icon_style}>
                 <img src={icon} alt='icon' />
             </div>

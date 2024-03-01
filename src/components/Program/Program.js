@@ -47,7 +47,7 @@ function Program (){
             </ul>
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="3" className={styles.item}>
+      <Accordion.Item eventKey="3" className={styles.item} id="buy">
         <Accordion.Header>Блок 3: Food photo. Смачні кадри</Accordion.Header>
         <Accordion.Body>
             <ul>
@@ -70,7 +70,7 @@ function Program (){
             </ul>
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="5" className={styles.item}>
+      <Accordion.Item eventKey="5" className={styles.item} >
         <Accordion.Header>Блок 5: Пейзажна зйомка</Accordion.Header>
         <Accordion.Body>
             <ul>

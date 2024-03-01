@@ -20,9 +20,19 @@
     text-shadow: 1px 1px 1px white;
 }
 .developing a{
-    color: white;
+    color: rgb(167, 167, 167);
     transition: all 1s ease;
 }
 .developing a:hover{
     color: #FFC700;
+}
+
+@media all and (max-width: 450px){
+    .footer_container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
 }

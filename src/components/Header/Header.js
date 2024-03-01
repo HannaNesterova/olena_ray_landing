@@ -42,7 +42,7 @@ function Header(){
                     <Link to="buy" 
                         smooth={true} 
                         duration={500} 
-                        className={styles.first_button}>Доєднатися
+                        className={styles.sec_button}>Доєднатися
                     </Link>
                     </div>
                 </div>

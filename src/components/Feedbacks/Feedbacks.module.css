@@ -1,5 +1,4 @@
-/* font-family: "Ubuntu", sans-serif;
-font-family: "Roboto", sans-serif; */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
 
 .container{
@@ -12,7 +11,7 @@ font-family: "Roboto", sans-serif; */
     font-size: 42px;
     color: #606060;
     font-family: "Ubuntu", sans-serif;
-    padding: 50px 0px 60px;
+    padding-top: 40px;
     font-weight: 400;
 }
 
@@ -24,7 +23,13 @@ font-family: "Roboto", sans-serif; */
 }
 .feedback_container img{
     border-radius: 10px;
-    border: 1px solid #ffc107;
+    border: 5px solid #ffc107;
     padding: 5px;
 
+}
+
+@media all and (max-width: 450px){
+    .container h2{
+        font-size: 30px;
+    }
 }

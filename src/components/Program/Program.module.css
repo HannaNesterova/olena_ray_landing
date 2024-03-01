@@ -3,7 +3,7 @@
 
 .program_container{
     background: linear-gradient(to right, #FFC700, #FD7900);
-    padding: 100px 0px;
+    padding: 60px 0px;
 }
 .container h2{
     text-align: center;
@@ -44,4 +44,26 @@
 }
 .accordion .item .accordion-collapse{
     transition: all .4s ease;
+}
+
+
+@media all and (max-width: 770px){
+    .accordion{
+        max-width: 650px;
+    }
+}
+
+@media all and (max-width: 650px){
+    .accordion{
+        max-width: 520px;
+    }
+}
+
+@media all and (max-width: 450px){
+.container h2{
+    font-size: 30px;
+}
+.accordion{
+    max-width: 300px;
+}
 }

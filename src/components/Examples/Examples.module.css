@@ -29,3 +29,8 @@
         width: 300px;
     }
 }
+@media all and (max-width:450px){
+    .container h2{
+        font-size: 30px;
+    }
+}

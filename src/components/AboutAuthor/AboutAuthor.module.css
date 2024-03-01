@@ -56,9 +56,13 @@
     .about_text_title{
         width: 300px;
     }
+    .about_text_title p{
+        font-size: 18px;
+    }
     .hero{
         width: 280px;
     }
+
 }
 @media all and (max-width:650px){
     .about_main{
@@ -69,4 +73,17 @@
         width: 100%;
         text-align: justify;
     }
+}
+@media all and (max-width:450px){
+    .container h2{
+        font-size: 30px;
+        padding: 10px;
+    }
+    .about_text_title p span{
+        font-size: 20px
+    }
+    .about_text_title p{
+        font-size: 18px;
+    }
+    
 }

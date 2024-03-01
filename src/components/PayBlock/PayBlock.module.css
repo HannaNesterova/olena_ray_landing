@@ -69,11 +69,22 @@ background: none;
     color: #A625D4; 
     background: none;
 }
-
-@media all and (max-width: 650px){
-    .container{
+@media all and (max-width: 770px){
+        .container{
+        max-width: 650px;
         flex-direction: column;
         height: 100%;
         padding: 10px;
     }
 }
+@media all and (max-width: 650px){
+    .container{
+        max-width: 520px;
+    }
+}
+
+@media all and (max-width: 450px){
+    .container{
+        max-width: 300px;
+    }
+    }

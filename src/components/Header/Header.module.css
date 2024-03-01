@@ -1,11 +1,7 @@
-/* font-family: "Roboto", sans-serif; 
-  font-family: "Oswald", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700; */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@300;400&display=swap');
 
 .main_header{
-    background-image: url('../../img/imgs//background.png');
+    background: linear-gradient(to right, #FFC700, #FD7900);
 }
 .container{
     padding-top: 13px;
@@ -57,7 +53,6 @@
     font-weight: 400;
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
-    font-weight: 400;
 }
 .sec_button{
     background-color: #CC30AA;
@@ -117,6 +112,9 @@ box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     .pretitle h1{
         font-size: 30px;
     }
+    .title p{
+        font-size: 20px;
+    }
     .buttons a{
         width: 180px;
         height: 40px;
@@ -131,12 +129,24 @@ box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
         height: 100%;
         justify-content: center;
     }
+    .text{
+        display: flex;
+        flex-direction: column;
+        max-width: 380px;
+        width: 100%;
+        padding: 24px;
+    }
+    .buttons a{
+        font-size: 14px;
+        text-align: center;
+    }
 }
 @media all and (max-width:690px){
     .container{
         flex-direction: column;
     }
     .main_header{
+        height: 100%;
         justify-content: center;
         padding-top: 30px;
     }
@@ -146,24 +156,24 @@ box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 @media all and (max-width:450px){
     .main_header{
-        background: linear-gradient(to right, #FFC700, #FD7900);
+            background: linear-gradient(to right, #FFC700, #FD7900);
+        }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
     }
-.buttons{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-}
-.buttons a{
-    width: 330px;
-    padding: 24px 50px;
-}
-.hero_web{
-    display: none;
-}
-.hero .mobile_hero{
-    display: block;
-    width: 390px;
-    height: 520px;
-}
+    .buttons a{
+        width: 330px;
+        padding: 24px 50px;
+    }
+    .hero_web{
+        display: none;
+    }
+    .hero .mobile_hero{
+        display: block;
+        width: 380px;
+        height: 520px;
+    }
 }
