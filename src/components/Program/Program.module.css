@@ -28,6 +28,7 @@
     font-size: 18px;
 }
 .accordion .item  button{
+    font-family: "Ubuntu", sans-serif;
     font-size: 19px;
     color: #252B42;
     font-weight: 700;

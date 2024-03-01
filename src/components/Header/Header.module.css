@@ -106,8 +106,8 @@ box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
         height: 396px;
     }
     .hero img{
-       width: 342px;
-       height: 357px;
+        width: 307px;
+        height: 323px;
     }
     .pretitle h1{
         font-size: 30px;
@@ -173,7 +173,10 @@ box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     }
     .hero .mobile_hero{
         display: block;
-        width: 380px;
-        height: 520px;
+        height: 455px;
+        width: 341px;
+    }
+    .text{
+        gap: 15px;
     }
 }

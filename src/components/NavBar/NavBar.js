@@ -22,6 +22,13 @@ function NavBar(){
   const handleLinkClick = () => {
     setExpanded(false); 
   };
+  const handleLogoClick = (event) => {
+    if (event.target.classList.contains(styles.logo)) {
+      event.stopPropagation();
+    } else {
+      handleToggle();
+    }
+  };
 
 
     return(
@@ -34,7 +41,7 @@ function NavBar(){
           <Container fluid className={styles.container}
             onClick={handleToggle} >
 
-            <Navbar.Brand href="#"><img src={logo} className={styles.logo} alt='logo'/></Navbar.Brand>
+            <Navbar.Brand href="#" onClick={handleLogoClick}><img src={logo} className={styles.logo} alt='logo'/></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} className={styles.button + ' ' + styles.hideTogglerBorder}/>
             <Navbar.Offcanvas
               show={expanded} 
