@@ -1,0 +1,79 @@
+/* font-family: "Ubuntu", sans-serif;
+font-family: "Roboto", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
+
+
+.container{
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(to right, #F15886, #A625D4);
+    height: 142px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}   
+.icon_style{
+    padding: 20px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #FFE601, #F35656);
+}
+.text_style h2{
+    font-size: 27px;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+}
+.text_style p{
+    font-size: 18px;
+    color:#FCB8F9;
+    font-family: "Ubuntu", sans-serif;
+}
+.price_style h2{
+    font-size: 34px;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+}
+.price_style h2 span{
+    font-size: 18px;
+    top: 0;
+}
+.price_style p{
+font-size: 18px;
+color:#FCB8F9;
+font-family: "Ubuntu", sans-serif;
+}
+.button_style{
+    background-color: #82AF00;
+    padding: 15px 40px;
+    border-radius: 30px;
+    transition: all 2s ease;
+}
+.button_style a{
+text-decoration: none;
+color: white;
+transition: all 2s ease;
+background: none;
+}
+
+.button_style:hover,
+.button_style a:hover {
+    background-color: #FFFFFF; 
+    color: #A625D4; 
+    cursor: pointer; 
+}
+.button_style:hover a,
+.button_style a:hover {
+    color: #A625D4; 
+    background: none;
+}
+
+@media all and (max-width: 650px){
+    .container{
+        flex-direction: column;
+        height: 100%;
+        padding: 10px;
+    }
+}

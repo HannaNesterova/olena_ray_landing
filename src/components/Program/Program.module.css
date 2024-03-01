@@ -1,17 +1,16 @@
-/* font-family: "Ubuntu", sans-serif;
-font-family: "Roboto", sans-serif; */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:ital,wght@0,300;0,400;1,400&display=swap');
 
 .program_container{
     background: linear-gradient(to right, #FFC700, #FD7900);
-    padding: 50px 0px;
+    padding: 100px 0px;
 }
 .container h2{
     text-align: center;
     font-size: 42px;
     color: #ffffff;
     font-family: "Ubuntu", sans-serif;
-    padding: 50px 0px 60px;
+    padding-bottom:30px;
     font-weight: 400;
 }
 

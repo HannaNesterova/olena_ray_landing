@@ -1,5 +1,6 @@
 import Accordion from 'react-bootstrap/Accordion';
 import styles from './Program.module.css';
+import PayBlock from '../PayBlock/PayBlock';
 
 function Program (){
     return(
@@ -95,6 +96,7 @@ function Program (){
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
+        <PayBlock />
             </div>
     )
 }
