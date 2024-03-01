@@ -1,9 +1,9 @@
-import icon1 from '../img/icons/01.png';
-import icon2 from '../img/icons/02.png';
-import icon3 from '../img/icons/03.png';
-import icon4 from '../img/icons/04.png';
-import icon5 from '../img/icons/05.png';
-import icon6 from '../img/icons/06.png';
+import icon1 from '../img/icons/01.svg';
+import icon2 from '../img/icons/02.svg';
+import icon3 from '../img/icons/03.svg';
+import icon4 from '../img/icons/04.svg';
+import icon5 from '../img/icons/05.svg';
+import icon6 from '../img/icons/06.svg';
 
 
 

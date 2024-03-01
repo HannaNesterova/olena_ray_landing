@@ -6,6 +6,8 @@ import { PiTelegramLogoLight } from "react-icons/pi";
 
 function FixedIcon (){
 
+
+
     const [iconOne, setIconTwo] = useState(true);
 
     const handleClick =() => {
@@ -13,7 +15,9 @@ function FixedIcon (){
     }
 
     return (
-        <div className={styles.fixed_container_icon} onClick={handleClick}>
+        <div className={styles.fixed_container_icon} 
+        onClick={handleClick}>
+
             {iconOne ? (
 
             <button rel="noreferrer">

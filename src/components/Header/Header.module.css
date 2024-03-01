@@ -117,9 +117,6 @@ box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     .pretitle h1{
         font-size: 30px;
     }
-    .container{
-        gap: 20px;
-    }
     .buttons a{
         width: 180px;
         height: 40px;
