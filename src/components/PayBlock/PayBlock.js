@@ -20,7 +20,7 @@ function PayBlock(){
                     <a href='https://buy.stripe.com/9AQcPa1g0bw0bBKdRb' target='_blank' rel="noreferrer">Замовити Курс</a>
                 </div>
                 <div className={styles.credit}>
-                    <a href='#' target='_blank' rel="noreferrer">Придбати у розсрочку </a>
+                    <a href='https://buy.stripe.com/9AQcPa1g0bw0bBKdRb' target='_blank' rel="noreferrer">Придбати у розсрочку </a>
                 </div>
 
             </div>
