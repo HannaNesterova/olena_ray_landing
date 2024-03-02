@@ -8,7 +8,7 @@ font-family: "Roboto", sans-serif; */
     width: 100%;
     margin: 0 auto;
     background: linear-gradient(to right, #F15886, #A625D4);
-    height: 142px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -50,6 +50,7 @@ font-family: "Ubuntu", sans-serif;
     padding: 15px 40px;
     border-radius: 30px;
     transition: all 2s ease;
+    text-align: center;
 }
 .button_style a{
 text-decoration: none;
@@ -66,6 +67,30 @@ background: none;
 }
 .button_style:hover a,
 .button_style a:hover {
+    color: #A625D4; 
+    background: none;
+}
+.credit{
+    background-color: #FD7900;
+    padding: 15px 40px;
+    border-radius: 30px;
+    transition: all 2s ease;
+    margin-top: 20px;
+}
+.credit a{
+    text-decoration: none;
+    color: white;
+    transition: all 2s ease;
+    background: none;
+    }
+.credit:hover,
+.credit a:hover {
+    background-color: #FFFFFF; 
+    color: #A625D4; 
+    cursor: pointer; 
+}
+.credit:hover a,
+.credit a:hover {
     color: #A625D4; 
     background: none;
 }

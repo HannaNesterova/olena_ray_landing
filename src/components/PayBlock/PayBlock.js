@@ -12,11 +12,17 @@ function PayBlock(){
                 <p>Старт навчання: 12 / 04 / 2024</p>
             </div>
             <div className={styles.price_style}>
-                <h2><span>$</span> 118</h2>
-                <p>160 CAD</p>
+                <h2><span>CAD</span> 160</h2>
+                <p>$ 118</p>
             </div>
+            <div className={styles.buttons}>
             <div className={styles.button_style}>
-                <a href='https://buy.stripe.com/9AQcPa1g0bw0bBKdRb' target='_blank' rel="noreferrer">Замовити Курс</a>
+                    <a href='https://buy.stripe.com/9AQcPa1g0bw0bBKdRb' target='_blank' rel="noreferrer">Замовити Курс</a>
+                </div>
+                <div className={styles.credit}>
+                    <a href='#' target='_blank' rel="noreferrer">Придбати у розсрочку </a>
+                </div>
+
             </div>
 
 

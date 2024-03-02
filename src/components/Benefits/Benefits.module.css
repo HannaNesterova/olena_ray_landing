@@ -97,4 +97,9 @@
         margin:0 auto;
         padding: 18px 0px 48px 0px;
     }
+    .benefit_item{
+        flex-direction: row;
+        width: 330px;
+        height: 150px;
+    }
 }
