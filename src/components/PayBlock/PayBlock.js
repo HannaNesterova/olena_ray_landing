@@ -9,7 +9,7 @@ function PayBlock(){
             </div>
             <div className={styles.text_style}>
                 <h2>Вартість Програми</h2>
-                <p>Старт навчання: відразу після оплати</p>
+                <p>Старт навчання: <br />відразу після оплати</p>
             </div>
             <div className={styles.price_style}>
                 <h2><span>CAD</span> 160</h2>
