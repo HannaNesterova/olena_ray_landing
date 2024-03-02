@@ -103,6 +103,10 @@ background: none;
         padding: 25px 0px;
         text-align: center;
     }
+    .text_style{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 @media all and (max-width: 650px){
     .container{
