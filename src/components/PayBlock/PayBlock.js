@@ -9,7 +9,7 @@ function PayBlock(){
             </div>
             <div className={styles.text_style}>
                 <h2>Вартість Програми</h2>
-                <p>Старт навчання: 12 / 04 / 2024</p>
+                <p>Старт навчання: відразу після оплати</p>
             </div>
             <div className={styles.price_style}>
                 <h2><span>CAD</span> 160</h2>
@@ -20,7 +20,7 @@ function PayBlock(){
                     <a href='https://buy.stripe.com/9AQcPa1g0bw0bBKdRb' target='_blank' rel="noreferrer">Замовити Курс</a>
                 </div>
                 <div className={styles.credit}>
-                    <a href='https://buy.stripe.com/9AQcPa1g0bw0bBKdRb' target='_blank' rel="noreferrer">Придбати у розсрочку </a>
+                    <a href='https://app.paythen.co/company/videotouch/plan/wlp6j1dv1b' target='_blank' rel="noreferrer">Придбати у розсрочку </a>
                 </div>
 
             </div>
