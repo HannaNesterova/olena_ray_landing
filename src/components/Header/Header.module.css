@@ -25,7 +25,7 @@
 }
 
 .pretitle h1{
-    font-size: 50px;
+    font-size: 60px;
     color: #ffffff;
     text-transform: uppercase;
     font-family: "Oswald", sans-serif;
@@ -110,10 +110,10 @@ box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
         height: 323px;
     }
     .pretitle h1{
-        font-size: 30px;
+        font-size: 45px;
     }
     .title p{
-        font-size: 20px;
+        font-size: 18px;
     }
     .buttons a{
         width: 180px;
@@ -139,6 +139,11 @@ box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     .buttons a{
         font-size: 14px;
         text-align: center;
+    }
+    .title p{
+        font-size: 18px;
+        text-align: left;
+        margin-top: 20px;
     }
 }
 @media all and (max-width:690px){

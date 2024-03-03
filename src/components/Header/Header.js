@@ -20,7 +20,7 @@ function Header(){
                      data-aos-easing="linear"
                      data-aos-duration="1500"
                       className={styles.pretitle}>
-                        <h1> Фото Інтенсив<br />по створенню < br/> мобільних фотографій </h1>
+                        <h1> Фото Інтенсив</h1>
                     </div>
 
                     <div className={styles.title}
