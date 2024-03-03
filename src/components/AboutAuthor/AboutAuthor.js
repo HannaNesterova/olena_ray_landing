@@ -1,5 +1,5 @@
 import styles from './AboutAuthor.module.css';
-import hero from '../../img/imgs/hero_3.png'
+import hero from '../../img/examples/author_work.png'
 
 function AboutAuthor () {
     return(

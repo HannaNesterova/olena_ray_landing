@@ -33,7 +33,9 @@
     font-size: 28px;
     font-weight: 700;
 }
-
+.hero{
+    width: 450px;
+}
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
