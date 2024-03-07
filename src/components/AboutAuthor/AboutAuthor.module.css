@@ -87,5 +87,8 @@
     .about_text_title p{
         font-size: 18px;
     }
+    .hero{
+        width: 360px;
+    }
     
 }

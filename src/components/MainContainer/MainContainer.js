@@ -18,9 +18,9 @@ function MainContainer(){
             <FixedIcon />
             <AboutAuthor />
             <Benefits />
-            <ShowFeedback />
-            <Program />
             <Examples />
+            <Program />
+            <ShowFeedback />
             <Footer />
         </div>
     )

@@ -46,7 +46,7 @@ function ShowFeedback(){
     return(
         <div className={styles.main_container_feedbacks} id="feedbacks" >
         <div className={styles.container}>
-            <h2>Відгуки кристувачів</h2>
+            <h2>Відгуки учнів</h2>
 
                 <Slider {...settings} className={styles.card_container}>
                     {dataFeedbacks.map(item => <Feedbacks item={item} key={item.id}/>)}
