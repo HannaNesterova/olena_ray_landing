@@ -8,6 +8,8 @@ import img7 from '../../img/examples/07.jpg';
 import img8 from '../../img/examples/08.jpg';
 import img9 from '../../img/examples/09.jpg';
 import img10 from '../../img/examples/10.jpg';
+import img11 from '../../img/examples/11.jpg';
+import img12 from '../../img/examples/12.jpg';
 
 export const dataExamples = [
     {
@@ -40,5 +42,11 @@ export const dataExamples = [
     },
     {
         img: img10
+    },
+    {
+        img: img11
+    },
+    {
+        img: img12
     }
 ]
